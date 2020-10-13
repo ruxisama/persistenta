@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="main"> 
+    
+    <class name="main.Person"table="PERSON" >
+        <id name="id" column="person_id" type="int">
+            <generator class= "increment"/>
+        </id>
+        <property name="name" column="name" type="string"></property>
+        <property name="age" column="age" type="int"/>
+        <property name="address" column="address" type="string"/>
+        <property name="salary" column="salary" type="int"/>
+     
+    </class>
+    
+</hibernate-mapping>
+
+
+<root>
+    
+</root>
